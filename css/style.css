@@ -28,10 +28,16 @@ input {
 input[type="text"],
 input[type="number"],
 input[type="date"], 
-input[type="file"] {
-    width: 400px;
+input[type="file"],
+textarea {
+    width: 500px;
+    max-width: 100%;
 }
 
+textarea {
+    padding: 10px 5px;
+
+}
 .header {
     background-color: blueviolet;
     height: 160px;
@@ -49,4 +55,69 @@ input[type="file"] {
     margin: 0 auto;
     position: relative;
     top: -62px;
+}
+
+.form-header {
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+
+.form-header p {
+    color: blueviolet;
+    border-bottom: 2px solid blueviolet;
+    width: 110px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+.form-body {
+    padding: 30px;
+}
+
+.form-title {
+    margin-bottom: 15px;
+}
+ .form-body p {
+    margin-bottom: 20px;
+ }
+
+ .required-fild {
+    color: red;
+ }
+
+ .box-input {
+    margin-bottom: 35px;
+ }
+ .block {
+    display: block;
+ }
+.optional-box {
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+.optional-list li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+.box-input p {
+    margin-bottom: 15px;
+}
+
+.btn_submit {
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.btn_submit:hover {
+    background-color: white;
+    color: blueviolet;
+    border-color: blueviolet;
 }
